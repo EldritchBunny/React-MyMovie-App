@@ -8,11 +8,17 @@ import {
 } from "react-router-dom";
 import ListView from "./pages/ListView";
 import ErrorView from "./pages/ErrorView";
+import { loader as movieCardDataLoader } from "./templates/NowShowing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" errorElement={<ErrorView />}>
-      <Route path="" element={<ListView />} />
+      <Route
+        index
+        loader={movieCardDataLoader}
+        path=""
+        element={<ListView />}
+      />
       <Route path="details/:id" element={<DetailsView />} />
     </Route>
   )

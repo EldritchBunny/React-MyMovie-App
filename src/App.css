@@ -4,7 +4,6 @@
   max-width: 768px;
   font-family: "Mulish", sans-serif;
   letter-spacing: 0.75px;
-
 }
 main {
   padding: 0 2rem;
@@ -83,4 +82,9 @@ h4 {
 .movieDescriptionContainerLayout {
   margin-top: 100px;
   border: solid 1px red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
